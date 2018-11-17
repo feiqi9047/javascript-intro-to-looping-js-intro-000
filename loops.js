@@ -22,6 +22,6 @@ function doWhileLoop(array){
   function incrementVariable() {
   i = i - 1;
   }
-  do {('${array}'); incrementVariable();} while (array.length>0 && incrementVariable())
+  do {array.shift(); incrementVariable();} while (array.length>0 && incrementVariable())
 return array
 }
